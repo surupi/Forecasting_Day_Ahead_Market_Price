@@ -41,19 +41,19 @@ These are derived variables created through domain transformation, domain rules,
 * **mcp_lag96_rolling_mean_4h**: 4-hour rolling mean computed on 1-day lagged prices.
 * **mcp_lag96_rolling_std_4h**: 4-hour rolling standard deviation (volatility) on 1-day lagged prices.
 * **mcp_lag_diff_24h**: Day-over-day price trend difference ($\text{lag}_{96} - \text{lag}_{192}$).
-* **renewable_penetration_ratio**: Proportion of demand met by renewable sources ($\text{renewable\_generation\_mw} / \text{demand\_mw}$).
-* **supply_cushion_mw**: Net reserve margin ($\text{total\_supply\_mw} - \text{demand\_mw}$).
+* **renewable_penetration_ratio**: Proportion of demand met by renewable sources (renewable_generation_mw / demand_mw).
+* **supply_cushion_mw**: Net reserve margin (total_supply_mw - demand_mw).
 * **thermal_dependency_ratio**: Thermal/conventional power dependency ratio.
-* **bid_demand_ratio**: Ratio of purchase bids to power demand ($\text{purchase\_bid\_mw} / \text{demand\_mw}$).
-* **bid_supply_ratio**: Ratio of sell bids to generation supply ($\text{sell\_bid\_mw} / \text{total\_supply\_mw}$).
-* **bid_spread_mw**: Offer vs purchase volume spread ($\text{sell\_bid\_mw} - \text{purchase\_bid\_mw}$).
-* **clearing_ratio**: Market clearance efficiency ($\text{mcv\_mw} / \text{purchase\_bid\_mw}$).
+* **bid_demand_ratio**: Ratio of purchase bids to power demand (purchase_bid_mw \ demand_mw).
+* **bid_supply_ratio**: Ratio of sell bids to generation supply (sell_bid_mw / total_supply_mw).
+* **bid_spread_mw**: Offer vs purchase volume spread (sell_bid_mw - purchase_bid_mw).
+* **clearing_ratio**: Market clearance efficiency (mcv_mw \ purchase_bid_mw).
 * **demand_ramp_rate**: 15-minute 1-step demand rate of change.
 * **residual_demand_ramp_rate**: 15-minute 1-step residual demand rate of change.
 * **peak_block_flag**: Binary flag (`1` during morning 7–10 AM & evening 6–10 PM peak windows).
 * **is_solar_window**: Binary flag (`1` during daytime solar active hours 6 AM – 6 PM).
-* **hour_sin**: Cyclical sine encoding for the hour of the day ($\sin(2\pi \times \text{hour} / 24)$).
-* **hour_cos**: Cyclical cosine encoding for the hour of the day ($\cos(2\pi \times \text{hour} / 24)$).
+* **hour_sin**: Cyclical sine encoding for the hour of the day (sin((2pi*hour) / 24)).
+* **hour_cos**: Cyclical cosine encoding for the hour of the day (cos((2pi*hour / 24)).
 
 ---
 
