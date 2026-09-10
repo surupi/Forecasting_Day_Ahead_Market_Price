@@ -47,7 +47,7 @@ The dataset consists of **7,968 valid records** at 15-minute block intervals (96
 - **Domain Metrics**: `renewable_penetration_ratio`, `supply_cushion_mw`, `residual_demand_mw`, `bid_spread_mw`, `clearing_ratio`.
 - **Lags & Rolling Statistics**: `mcp_lag_96` (1-day lag), `mcp_lag_672` (7-day lag), `mcp_same_block_ma7d`, `mcp_same_block_std7d`, `mcp_lag96_rolling_mean_4h`, `mcp_lag96_rolling_std_4h`.
 
-*For detailed column descriptions and market insights, see [findings.md](findings.md).*
+*For detailed column descriptions and market insights, see [eda_findings.md](eda_findings.md).*
 
 ---
 
