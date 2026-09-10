@@ -40,7 +40,7 @@ These are derived variables created through domain transformation, domain rules,
 * **mcp_same_block_std7d**: 7-day standard deviation (volatility) of price for the same 15-minute block.
 * **mcp_lag96_rolling_mean_4h**: 4-hour rolling mean computed on 1-day lagged prices.
 * **mcp_lag96_rolling_std_4h**: 4-hour rolling standard deviation (volatility) on 1-day lagged prices.
-* **mcp_lag_diff_24h**: Day-over-day price trend difference ($\text{lag}_{96} - \text{lag}_{192}$).
+* **mcp_lag_diff_24h**: Day-over-day price trend difference (lag_96 - lag_192).
 * **renewable_penetration_ratio**: Proportion of demand met by renewable sources (renewable_generation_mw / demand_mw).
 * **supply_cushion_mw**: Net reserve margin (total_supply_mw - demand_mw).
 * **thermal_dependency_ratio**: Thermal/conventional power dependency ratio.
@@ -52,8 +52,8 @@ These are derived variables created through domain transformation, domain rules,
 * **residual_demand_ramp_rate**: 15-minute 1-step residual demand rate of change.
 * **peak_block_flag**: Binary flag (`1` during morning 7–10 AM & evening 6–10 PM peak windows).
 * **is_solar_window**: Binary flag (`1` during daytime solar active hours 6 AM – 6 PM).
-* **hour_sin**: Cyclical sine encoding for the hour of the day (sin((2pi*hour) / 24)).
-* **hour_cos**: Cyclical cosine encoding for the hour of the day (cos((2pi*hour / 24)).
+* **hour_sin**: Cyclical sine encoding for the hour of the day (sin(2 * π * block / 24)).
+* **hour_cos**: Cyclical cosine encoding for the hour of the day (cos(2 * π * block / 24)).
 
 ---
 
