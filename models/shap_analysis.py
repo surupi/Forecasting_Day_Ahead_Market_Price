@@ -39,10 +39,10 @@ def run_shap_analysis():
     mean_abs_shap = np.abs(shap_values).mean(axis=0)
     shap_importance = pd.DataFrame({
         "Feature": FEATURE_COLUMNS,
-        "Mean |SHAP Value| (INR/MWh Impact)": mean_abs_shap
-    }).sort_values(by="Mean |SHAP Value| (INR/MWh Impact)", ascending=False).reset_index(drop=True)
+        "Mean Abs SHAP Value (INR/MWh Impact)": mean_abs_shap
+    }).sort_values(by="Mean Abs SHAP Value (INR/MWh Impact)", ascending=False).reset_index(drop=True)
 
-    shap_importance["Mean |SHAP Value| (INR/MWh Impact)"] = shap_importance["Mean |SHAP Value| (INR/MWh Impact)"].round(2)
+    shap_importance["Mean Abs SHAP Value (INR/MWh Impact)"] = shap_importance["Mean Abs SHAP Value (INR/MWh Impact)"].round(2)
 
     return shap_importance
 

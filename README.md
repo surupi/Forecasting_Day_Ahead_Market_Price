@@ -99,4 +99,4 @@ python -m models.shap_analysis
 
 - **Primary Driver**: 1-day lagged price (`mcp_lag_96`) and 7-day same-block moving average (`mcp_same_block_ma7d`) are the strongest predictors of current clearing price.
 - **Reserve Cushion**: Low `supply_cushion_mw` strongly correlates with price spikes during morning and evening peak demand windows.
-- *Detailed performance metrics and model comparisons can be viewed in [results.md](results.md).*
+- *Detailed performance metrics and model comparisons can be viewed in [model_benchmark_performance.md](model_benchmark_performance.md).*
